@@ -7,7 +7,7 @@
         {
             "type": "msedge",
             "request": "launch",
-            "name": "Open about.html",
+            "name": "Open index.html",
             "file": "c:\\Users\\BLESSING\\OneDrive - Botswana Accountancy College\\Documents\\my-first-gut-hub-page\\about.html"
         }
     ]
