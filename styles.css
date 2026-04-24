@@ -1,7 +1,7 @@
 body{
     font-family: Arial, sans-serif;
-    color: white;
-    background-color: black;
+    color: black;
+    background-image: url('C:/Users/BLESSING/OneDrive - Botswana Accountancy College/Documents/my-first-gut-hub-page/background.png');
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -19,7 +19,7 @@ header h1 {
 }
 
 nav a {
-    color: white;
+    color: rgb(5, 6, 6);
     text-decoration: none;
     margin: 0 10px;
 }
@@ -64,7 +64,7 @@ a:hover {
     text-decoration: underline;
 }
 img {
-    border: 5px solid lightblue;
+    border: 5px black solid;
     border-radius: 5px;
 }
 
