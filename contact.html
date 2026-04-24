@@ -10,35 +10,43 @@
 
 </head>
 
-<body class="bg-dark text-light">
+<body>
 
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-secondary">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom border-bottom">
       <div class="container">
      
-      <a class="navbar-brand fw-bold" href="index.html">Blessing's Fitness Club
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <span class="fw-bold me-2">Blessing Fitness</span>
+        <img src="Blessing Fitness Club logo design.png" alt="Logo" height="40">
       </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNAV">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
         <div class="collapse navbar-collapse" id="navbarNAV">
           <ul class="navbar-nav ms-auto align-items-lg-center">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link fw-semibold" href="index.html">Home</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="service.html">Services</a>
+              <a class="nav-link fw-semibold" href="service.html">Services</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="shop.html">Shop</a>
+              <a class="nav-link fw-semibold" href="shop.html">Shop</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-item" href="contact.html">Contact</a>
+              <a class="nav-link fw-semibold active" href="contact.html">Contact</a>
             </li>
-
-            
+            <li class="nav-item">
+             <a class="nav-link fw-semibold" href="booking.html">Book a Session</a>
+              </li>
               <li class="nav-item">
-             <a class="nav-item" href="about.html">Policy & Privacy</a>
+             <a class="nav-link fw-semibold" href="about.html">Policy & Privacy</a>
               </li>
           </ul>
         </div>
@@ -47,31 +55,31 @@
   </header>
 
   <main class="container my-5">
-    <h1 class="fw-bold mb-3">Contact Us</h1>
-    <p class="text-secondary mb-4">Have questions or want to book a session? Get in touch with us below.</p>
+    <h1 class="fw-bold mb-3 text-light">Contact Us</h1>
+    <p class="text-light mb-4">Have questions or want to book a session? Get in touch with us below.</p>
 
     <div class="row g-4">
       <div class="col-12 col-lg-6">
         <div class="p-4 rounded bg-black border border-secondary">
-          <h4 class="mb-3">Send a Message</h4>
+          <h4 class="mb-3 text-light">Send a Message</h4>
 
-          <form id="contact-form" action="acknowledgement.html" method="get">
+          <form id="contact-form">
             <div class="mb-3">
-              <label for="name" class="form-label text-secondary">Full Name</label>
+              <label for="name" class="form-label text-light">Full Name</label>
               <input type="text" id="name" class="form-control bg-dark text-light border-secondary" required>
             </div>
 
             <div class="mb-3">
-              <label for="email" class="form-label text-secondary">Email</label>
+              <label for="email" class="form-label text-light">Email</label>
               <input type="email" id="email" class="form-control bg-dark text-light border-secondary" required>
             </div>
 
             <div class="mb-3">
-              <label for="message" class="form-label text-secondary">Message</label>
+              <label for="message" class="form-label text-light">Message</label>
               <textarea id="message" rows="4" class="form-control bg-dark text-light border-secondary" required></textarea>
             </div>
 
-            <button class="btn btn-primary w-100">Send Message</button>
+            <button type="submit" class="btn btn-dark w-100">Send Message</button>
           </form>
         </div>
       </div>
@@ -79,29 +87,49 @@
      
       <div class="col-12 col-lg-6">
         <div class="p-4 rounded bg-black border border-secondary">
-          <h4 class="mb-3">Contact Details</h4>
+          <h4 class="mb-3 text-light">Contact Details</h4>
 
-          <p class="text-secondary">Email:</p>
+          <p class="text-light">Email:</p>
           <p><a href="mailto:maingablessing02@gmail.com">maingablessing02@gmail.com</a></p>
 
-          <p class="text-secondary mt-3">WhatsApp / Phone:</p>
+          <p class="text-light mt-3">WhatsApp / Phone:</p>
           <p><a href="https://wa.me/26778383413">26778383413</a> / <a href="https://wa.me/26776227611">26776227611</a></p>
 
-          <p class="text-secondary mt-3">Location:</p>
-          <p>Gaborone, Botswana</p>
+          <p class="text-light mt-3">Location:</p>
+          <p class="text-light">Gaborone, Botswana</p>
 
         </div>
       </div>
     </div>
   </main>
 
+  <!-- Acknowledgement Modal -->
+  <div class="modal fade" id="acknowledgementModal" tabindex="-1" aria-labelledby="acknowledgementLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-black border-secondary">
+        <div class="modal-header border-secondary">
+          <h5 class="modal-title text-light" id="acknowledgementLabel">Thank You!</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-light">
+          <h4>Acknowledgements</h4>
+          <p>I would like to thank you for putting your trust in our club for your wellbeing.</p>
+          <p>Thank you all for your support and the road to living a healthy life.</p>
+        </div>
+        <div class="modal-footer border-secondary">
+          <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer class="border-top border-secondary py-4">
     <div class="container d-flex justify-content-between align-items-center">
-      <p class="mb-0 text-secondary">© <span id="year"></span> Blessing Fitness</p>
+      <p class="mb-0 text-light">© <span id="year"></span> Blessing Fitness</p>
       <div class="d-flex gap-3">
-        <a href="#">Instagram</a>
-        <a href="#">Facebook</a>
-        <a href="#">WhatsApp</a>
+        <a href="#" class="text-light">Instagram</a>
+        <a href="#" class="text-light">Facebook</a>
+        <a href="#" class="text-light">WhatsApp</a>
       </div>
     </div>
   </footer>
@@ -113,7 +141,9 @@
 
     document.getElementById('contact-form').addEventListener('submit', e => {
       e.preventDefault();
-      alert("Thank you! We'll get back to you shortly.");
+      const modal = new bootstrap.Modal(document.getElementById('acknowledgementModal'));
+      modal.show();
+      document.getElementById('contact-form').reset();
     });
   </script>
 <script src="script.js"></script>

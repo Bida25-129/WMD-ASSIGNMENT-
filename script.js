@@ -1,6 +1,7 @@
 console.log("JavaScript is connected!");
 const toggleButton = document.getElementById('theme-toggle');
-toggleButton.addEventListener('click', function() {
+if (toggleButton) {
+    toggleButton.addEventListener('click', function() {
         document.body.classList.toggle('dark-mode');
         if (document.body.classList.contains('dark-mode')) {
             toggleButton.textContent = 'light Mode';
@@ -8,3 +9,4 @@ toggleButton.addEventListener('click', function() {
             toggleButton.textContent = 'Dark Mode';
         }
     });
+}

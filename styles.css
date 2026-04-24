@@ -1,25 +1,38 @@
 body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font-family: Arial, sans-serif;
     color: black;
     background-image: url('C:/Users/BLESSING/OneDrive - Botswana Accountancy College/Documents/my-first-gut-hub-page/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: darken;
     margin: 0;
     padding: 0;
     line-height: 1.6;
     transition: background-color 0.3s, color 0.3s;
 }
-header {
-    background-color: lightblue;
-    color: black;
-    padding: 40px;
-    text-align: center;
+main {
+    flex: 1;
+}
+.navbar-custom {
+    background-color: grey !important;
 }
 
-header h1 {
-    margin: 0;
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-brand span,
+.navbar-custom .nav-link {
+    color: white !important;
+}
+
+.navbar-custom .navbar-toggler-icon {
+    filter: invert(1);
 }
 
 nav a {
-    color: rgb(5, 6, 6);
     text-decoration: none;
     margin: 0 10px;
 }
@@ -46,8 +59,6 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
     width: 100%;
 }
 p {
@@ -74,7 +85,7 @@ font-weight: bold;
 }
 body.dark-mode {
     background-color: #333333;
-    color: #f9f9f9;
+    color: black;
 }
 body.dark-mode nav {background-color: #222222;}
 #theme-toggle {padding: 8px 16px; cursor: pointer; margin: 10px; }

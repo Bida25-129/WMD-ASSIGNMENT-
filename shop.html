@@ -8,12 +8,17 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="bg-dark text-light">
+<body>
 
   <!-- NAVBAR -->
-   <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-danger">
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom border-bottom">
     <div class="container">
-      <a class="navbar-brand fw-bold text-danger" href="index.html">Blessing Fitness</a>
+
+      <!-- Logo -->
+      <a href="index.html" class="navbar-brand d-flex align-items-center">
+        <span class="fw-bold me-2">Blessing Fitness</span>
+        <img src="Blessing Fitness Club logo design.png" alt="Logo" height="40">
+      </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
         <span class="navbar-toggler-icon"></span>
@@ -21,108 +26,109 @@
 
       <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link active" href="service.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">Privacy & Policies</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="service.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold active" href="shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="about.html">Privacy & Policies</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="booking.html">Book a Session</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-    <main class="container my-5" style="margin-left:260px;">
-  <h1 class="text-danger fw-bold mb-4">Shop Fitness Gear & Equipment</h1>
+    <main class="container my-5">
+  <h1 class="text-light fw-bold mb-4">Shop Fitness Gear & Equipment</h1>
 
   <div class="row g-4">
 
     <!-- Gym Gloves -->
     <div class="col-sm-6 col-md-4 col-lg-3">
-      <div class="card bg-black border-danger h-100">
+      <div class="card bg-black border-secondary h-100">
         <img src="gym gloves.webp" class="card-img-top" alt="Gym Gloves">
-        <div class="card-body text-center">
-          <h6 class="text-danger">Gym Gloves</h6>
-          <p class="text-secondary">P150 each</p>
-          <button class="btn btn-danger w-100">Buy</button>
+        <div class="card-body text-center text-light">
+          <h6 class="text-light">Gym Gloves</h6>
+          <p>P150 each</p>
+          <button class="btn btn-dark w-100">Buy</button>
         </div>
       </div>
     </div>
 
     <!-- Resistance Bands -->
     <div class="col-sm-6 col-md-4 col-lg-3">
-      <div class="card bg-black border-danger h-100">
+      <div class="card bg-black border-secondary h-100">
         <img src="gym bandss.webp" class="card-img-top" alt="Resistance Bands">
-        <div class="card-body text-center">
-          <h6 class="text-danger">Resistance Bands</h6>
-          <p class="text-secondary">P200 each</p>
-          <button class="btn btn-danger w-100">Buy</button>
+        <div class="card-body text-center text-light">
+          <h6 class="text-light">Resistance Bands</h6>
+          <p>P200 each</p>
+          <button class="btn btn-dark w-100">Buy</button>
         </div>
       </div>
     </div>
 
     <!-- Dumbbells -->
     <div class="col-sm-6 col-md-4 col-lg-3">
-      <div class="card bg-black border-danger h-100">
+      <div class="card bg-black border-secondary h-100">
         <img src="gym dumbells.webp" class="card-img-top" alt="Dumbbells">
-        <div class="card-body text-center">
-          <h6 class="text-danger">Dumbbells Set</h6>
-          <p class="text-secondary">P300 each</p>
-          <button class="btn btn-danger w-100">Buy</button>
+        <div class="card-body text-center text-light">
+          <h6 class="text-light">Dumbbells Set</h6>
+          <p>P300 each</p>
+          <button class="btn btn-dark w-100">Buy</button>
         </div>
       </div>
     </div>
 
     <!-- Kettlebell -->
     <div class="col-sm-6 col-md-4 col-lg-3">
-      <div class="card bg-black border-danger h-100">
+      <div class="card bg-black border-secondary h-100">
         <img src="gym kettlebells.webp" class="card-img-top" alt="Kettlebell">
-        <div class="card-body text-center">
-          <h6 class="text-danger">Kettlebell</h6>
-          <p class="text-secondary">P300 each</p>
-          <button class="btn btn-danger w-100">Buy</button>
+        <div class="card-body text-center text-light">
+          <h6 class="text-light">Kettlebell</h6>
+          <p>P300 each</p>
+          <button class="btn btn-dark w-100">Buy</button>
         </div>
       </div>
     </div>
 
     <!-- Skipping Rope -->
     <div class="col-sm-6 col-md-4 col-lg-3">
-      <div class="card bg-black border-danger h-100">
+      <div class="card bg-black border-secondary h-100">
         <img src="skipping rop.webp" class="card-img-top" alt="Skipping Rope">
-        <div class="card-body text-center">
-          <h6 class="text-danger">Skipping Rope</h6>
-          <p class="text-secondary">P120 each</p>
-          <button class="btn btn-danger w-100">Buy</button>
+        <div class="card-body text-center text-light">
+          <h6 class="text-light">Skipping Rope</h6>
+          <p>P120 each</p>
+          <button class="btn btn-dark w-100">Buy</button>
         </div>
       </div>
     </div>
 
     <!-- Yoga Mat -->
     <div class="col-sm-6 col-md-4 col-lg-3">
-      <div class="card bg-black border-danger h-100">
+      <div class="card bg-black border-secondary h-100">
         <img src="yoga mat.webp" class="card-img-top" alt="Yoga Mat">
-        <div class="card-body text-center">
-          <h6 class="text-danger">Yoga Mat</h6>
-          <p class="text-secondary">P250 each</p>
-          <button class="btn btn-danger w-100">Buy</button>
+        <div class="card-body text-center text-light">
+          <h6 class="text-light">Yoga Mat</h6>
+          <p>P250 each</p>
+          <button class="btn btn-dark w-100">Buy</button>
         </div>
       </div>
     </div>
 
     <!-- Protein Supplement -->
     <div class="col-sm-6 col-md-4 col-lg-3">
-      <div class="card bg-black border-danger h-100">
+      <div class="card bg-black border-secondary h-100">
         <img src="protein.webp" class="card-img-top" alt="Protein Supplement">
-        <div class="card-body text-center">
-          <h6 class="text-danger">Protein Supplement</h6>
-          <p class="text-secondary">P500 each</p>
-          <button class="btn btn-danger w-100">Buy</button>
+        <div class="card-body text-center text-light">
+          <h6 class="text-light">Protein Supplement</h6>
+          <p>P500 each</p>
+          <button class="btn btn-dark w-100">Buy</button>
         </div>
       </div>
     </div>
 </main>
 <footer class="border-top border-secondary py-4">
     <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
-      <p class="mb-0 text-secondary">© <span id="year"></span> Blessing Fitness</p>
+      <p class="mb-0 text-light">© <span id="year"></span> Blessing Fitness</p>
       </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
