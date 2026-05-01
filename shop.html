@@ -126,6 +126,66 @@
       </div>
     </div>
 </main>
+
+  <!-- PAYMENT SECTION (embedded checkout) -->
+  <section class="payment-section py-5 bg-dark text-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+
+          <div class="card bg-black border-secondary text-light p-4 shadow">
+            <h3 class="text-center mb-4 fw-bold">Complete Your Purchase</h3>
+
+            <div id="successMsg" class="alert alert-success d-none text-center">
+              Payment submitted successfully!
+            </div>
+
+            <form id="paymentForm">
+
+              <div class="mb-3">
+                <label class="form-label">Full Name</label>
+                <input type="text" class="form-control bg-dark text-light border-secondary" required>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control bg-dark text-light border-secondary" required>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Payment Method</label>
+                <select class="form-select bg-dark text-light border-secondary" required>
+                  <option value="">Select method</option>
+                  <option>Credit Card</option>
+                  <option>Debit Card</option>
+                  <option>Mobile Money</option>
+                  <option>Bank Transfer</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Reference Number</label>
+                <input type="text" class="form-control bg-dark text-light border-secondary" required>
+              </div>
+
+              <button type="submit" class="btn btn-dark w-100 fw-semibold">
+                Submit Payment
+              </button>
+
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-top border-secondary py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <p class="mb-0 text-light">© <span id="year"></span> Blessing Fitness</p>
+    </div>
+  </footer>
 <footer class="border-top border-secondary py-4">
     <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
       <p class="mb-0 text-light">© <span id="year"></span> Blessing Fitness</p>
