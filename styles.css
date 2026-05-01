@@ -13,13 +13,13 @@ body{
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    transition: background-color 0.3s, color 0.3s;
+   
 }
 main {
     flex: 1;
 }
 .navbar-custom {
-    background-color: grey !important;
+    background-picture: backgroung.png;
 }
 
 .navbar-custom .navbar-brand,
