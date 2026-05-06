@@ -4,7 +4,7 @@ body{
     min-height: 100vh;
     font-family: Arial, sans-serif;
     color: black;
-    background-image: background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFwdG9wJTIwY2xvdWRzfGVufDB8fDB8fHww&w=1000&q=80');
+    background-image: url('background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -25,7 +25,7 @@ main {
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-brand span,
 .navbar-custom .nav-link {
-    color: white !important;
+    color: white ;
 }
 
 .navbar-custom .navbar-toggler-icon {
