@@ -7,7 +7,6 @@ body{
     background-image: url('background.png');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: darken;
     margin: 0;
@@ -17,6 +16,9 @@ body{
 }
 main {
     flex: 1;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 .navbar-custom {
     background-picture: backgroung.png;
@@ -40,11 +42,6 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
-}
-main {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
 }
 
 main img {
@@ -84,8 +81,14 @@ color: rgb(0, 0, 3);
 font-weight: bold;
 }
 body.dark-mode {
-    background-color: #333333;
-    color: black;
+    background-color: #222222;
+    color:white;
 }
-body.dark-mode nav {background-color: #222222;}
-#theme-toggle {padding: 8px 16px; cursor: pointer; margin: 10px; }
+body.dark-mode nav {
+    background-color: #222222;
+}
+#theme-toggle {
+    padding: 8px 16px; 
+    cursor: pointer; 
+    margin: 10px;
+}
